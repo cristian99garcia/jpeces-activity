@@ -41,8 +41,7 @@ logger = logging.getLogger('JPeces')
 
 
 if platform.machine().startswith('arm'):
-    print("I need libsugarize.so arm")
-    sys.exit(0)
+    lib = "lib/arm/"
 
 else:
     if platform.architecture()[0] == '64bit':
